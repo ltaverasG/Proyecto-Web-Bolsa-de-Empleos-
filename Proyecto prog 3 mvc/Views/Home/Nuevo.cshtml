@@ -1,0 +1,38 @@
+﻿@model Proyecto_prog_3_mvc.Models.view_models.TablaViewModel
+@{
+    ViewBag.Title = "Nuevo ";
+}
+
+<h2>Nuevo Empleo</h2>
+
+@using (Html.BeginForm("Nuevo", "Home", FormMethod.Post))
+{
+    <div class="row">
+
+        <div class="col-lg-12">
+            <div>
+                @Html.LabelFor(d => d.ubicacion)
+                @Html.TextBoxFor(d => d.ubicacion, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.ubicacion, null, new { @class = "red" })
+            </div>
+
+            <div>
+                @Html.LabelFor(d => d.posicion)
+                @Html.TextBoxFor(d => d.posicion, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.posicion, null, new { @class = "red" })
+            </div>
+
+            <div>
+                @Html.LabelFor(d => d.compañia)
+                @Html.TextBoxFor(d => d.compañia, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.compañia, null, new { @class = "red" })
+            </div>
+
+            <div style="text-align:left; padding:5px;">
+                <input value ="Guardar" class="btn btn-primary" type="submit"/>
+            </div>
+
+        </div>
+
+    </div>
+}

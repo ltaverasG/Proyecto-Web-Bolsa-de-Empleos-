@@ -1,0 +1,36 @@
+﻿@model List<Proyecto_prog_3_mvc.Models.view_models.ListBuscador>
+
+@{
+    ViewBag.Title = "Seleccion";
+}
+
+<h2>Resultados de la busqueda </h2>
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <table class="table">
+
+            <tr>
+                <th>id</th>
+                <th>Ubicacion</th>
+                <th>Posicion</th>
+                <th>Compañia</th>
+            </tr>
+
+            @foreach (var Elemento in Model)
+             {
+                <tr>
+                    <td>@Elemento.Id </td>
+                    <td>@Elemento.ubicacion</td>
+                    <td>@Elemento.posicion</td>
+                    <td>@Elemento.compañia</td>
+                </tr>
+             }
+
+        </table>
+
+    </div>
+
+</div>

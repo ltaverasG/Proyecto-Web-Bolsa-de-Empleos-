@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="proyectoProg3ModelStoreContainer" CdmEntityContainer="proyectoProg3Entities">
+    <EntitySetMapping Name="trabajos">
+      <EntityTypeMapping TypeName="proyectoProg3Model.trabajos">
+        <MappingFragment StoreEntitySet="trabajos">
+          <ScalarProperty Name="trabajo_id" ColumnName="trabajo_id" />
+          <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
+          <ScalarProperty Name="posicion" ColumnName="posicion" />
+          <ScalarProperty Name="compañia" ColumnName="compañia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

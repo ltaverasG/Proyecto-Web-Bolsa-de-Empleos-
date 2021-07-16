@@ -1,0 +1,29 @@
+﻿html {
+    font-family: 'Poppins',sans-serif;
+}
+
+table {
+    display: block;
+    width: 30%;
+    margin: 1rem auto;
+    flex-direction: column;
+    border: 1px solid white;
+    border-collapse:collapse;
+    text-align: center;
+}
+
+    table th {
+        width: 10%;
+        border: 1px solid white;
+        padding: 5px;
+        margin: 0.5rem auto;
+    }
+
+    table td {
+        border: 1px solid white;
+        padding: 5px;
+    }
+
+table tr:hover {
+  background: #ccc;
+}
